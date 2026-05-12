@@ -6,50 +6,106 @@
   <meta name="referrer" content="no-referrer" />
   <meta http-equiv="X-Content-Type-Options" content="nosniff" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- TAB ICON -->
   <link rel="shortcut icon" id="tab-favicon" href="favicon.png" />
-  <title id="t">Home</title>
+
+  <!-- SITE TITLE -->
+  <title id="t">MyPortal</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/global.css?v=6" />
   <link rel="stylesheet" href="/assets/css/h.css?v=01" />
   <link rel="stylesheet" href="/assets/css/nav.css?v=01" />
+
+  <!-- ICONS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6840529569014734"
-    crossorigin="anonymous"></script>
+
+  <!-- CUSTOM STYLE -->
+  <style>
+    body {
+      overflow: hidden;
+    }
+
+    .title {
+      font-size: 70px;
+      font-weight: 700;
+      text-align: center;
+      color: white;
+      letter-spacing: 2px;
+    }
+
+    /* REMOVE SUBHEADINGS */
+    h2,
+    h3,
+    h4,
+    .subtitle,
+    .subheading,
+    #splash {
+      display: none !important;
+    }
+
+    .search-container {
+      margin-top: 20px;
+    }
+
+    #input {
+      width: 500px;
+      max-width: 90%;
+      padding: 14px;
+      border-radius: 12px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+  </style>
 </head>
 
-<body class="center" onload="SplashT">
+<body class="center">
+
+  <!-- NAV -->
   <div class="f-nav"></div>
+
+  <!-- PARTICLES -->
   <div id="particles-js">
-    <script rel="preload" src="https://cdn.jsdelivr.net/particles.js/2.0.0/"></script>
+
+    <!-- MAIN -->
     <div class="main">
-      <h1 class="title">&#73;&#110;&#116;&#101;&#114;&#115;&#116;&#101;&#108;&#108;&#97;&#114;</h1>
-      <p id="splash"></p>
+
+      <!-- MAIN TITLE -->
+      <h1 class="title"></h1>
+
+      <!-- SEARCH -->
       <div class="search-container">
         <form id="fv" method="POST">
-          <input id="input" class="truncate" placeholder="Search or enter a URL" type="text" />
+          <input id="input" class="truncate" placeholder="Search or enter a URL" type="text" autocomplete="off" />
         </form>
       </div>
+
     </div>
   </div>
+
+  <!-- SCRIPTS -->
   <script src="/assets/js/mg-pxy.js"></script>
-  <script src="assets/js/index-3.js"></script>
+  <script src="/assets/js/index-3.js"></script>
   <script src="/assets/js/h1.js"></script>
+
+  <!-- OPTIONAL MATH -->
   <script src="./assets/mathematics/bundle.js?v=2025-04-15"></script>
   <script src="./assets/mathematics/config.js?v=2025-04-15"></script>
+
+  <!-- OPTIONAL LANGUAGE -->
   <script src="/assets/languagearts/sj.all.js?v=2025-04-15"></script>
   <script src="/assets/js/sj-tp.js?v=2025-04-15"></script>
-  <script src="/assets/js/m1.js"></script>
-  <!-- DO NOT REMOVE-->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKJQ5QHQTJ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || []
-    function gtag() {
-      dataLayer.push(arguments)
-    }
-    gtag("js", new Date())
 
-    gtag("config", "G-WKJQ5QHQTJ")
+  <!-- MAIN -->
+  <script src="/assets/js/m1.js"></script>
+
+  <!-- CUSTOM TITLE SCRIPT -->
+  <script>
+    document.title = "Home";
   </script>
-  <!-- DO NOT REMOVE-->
+
 </body>
 
 </html>
